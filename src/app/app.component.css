@@ -1,0 +1,11 @@
+md-toolbar {
+  padding: 0 10%;
+}
+
+md-icon {
+  margin: 0 10px;
+}
+
+.fill-remaining-space {
+  flex: 1 1 auto;
+}
