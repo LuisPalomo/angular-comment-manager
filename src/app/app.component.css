@@ -1,4 +1,6 @@
 md-toolbar {
+  border-bottom: #2196f3 300px solid;
+  margin-bottom: -300px;
   padding: 0 10%;
 }
 
@@ -6,6 +8,14 @@ md-icon {
   margin: 0 10px;
 }
 
+md-card {
+  margin: 20px 10%;
+}
+
 .fill-remaining-space {
   flex: 1 1 auto;
+}
+
+.mat-app-background {
+    background-color: #e9e9e9;
 }
