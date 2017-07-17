@@ -63,3 +63,15 @@ md-icon{
 .fill-remaining-space {
   flex: 1 1 auto;
 }
+
+.fa-commenting-o {
+  font-size: 1.6em;
+  margin: 0;
+  color: #ffffff;
+}
+
+.mat-fab {
+  position: absolute;
+  top: 3em;
+  right: 1em;
+}
