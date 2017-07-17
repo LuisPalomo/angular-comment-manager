@@ -11,3 +11,9 @@ body {
 md-icon {
   cursor: pointer;
 }
+
+.mat-list-item-content {
+  height: auto !important;
+  min-height: 72px !important;
+  padding: 1em 0 !important;
+}

@@ -1,7 +1,7 @@
 <md-list>
   <md-list-item *ngFor="let comment of comments" class="list-item">
     <img md-list-avatar src="{{comment.user.avatar}}" alt="...">
-    <h3 md-line class="mat-subheading-2"> {{comment.user.name}} <span class="comment-time">{{comment.time}}</span></h3>
+    <h3 md-line class="mat-subheading-2"> {{comment.user.name}} <span class="comment-time">{{comment.time.substring(16, 21)}}</span></h3>
     <p md-line class="mat-body-2"> {{comment.text}} </p>
   </md-list-item>
 </md-list>
