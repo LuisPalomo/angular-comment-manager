@@ -1,0 +1,15 @@
+.mat-subheading-2 {
+  color: #646464 !important;
+  font-weight: 500 !important;
+}
+
+.mat-body-2 {
+  padding-bottom: 1em !important;
+  border-bottom: #e2e2e2 2px solid;
+}
+
+.comment-time {
+  color: #bfbfbf;
+  float: right;
+  font-size: 14px;
+}

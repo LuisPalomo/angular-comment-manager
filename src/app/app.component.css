@@ -8,10 +8,6 @@ md-icon {
   margin: 0 10px;
 }
 
-md-card {
-  margin: 20px 10%;
-}
-
 .fill-remaining-space {
   flex: 1 1 auto;
 }

@@ -1,0 +1,48 @@
+md-card {
+  margin: 20px 10%;
+  padding: 0;
+}
+
+md-card-header {
+  background-color: #f1f1f1;
+  align-items: center;
+  padding: 1em 5em;
+  border-bottom: #e2e2e2 2px solid;
+}
+
+md-card-content {
+  padding: 1em 5em;
+}
+
+md-card-actions {
+  background-color: #f7f7f7;
+  margin: 0;
+}
+
+.mat-title {
+  color: #646464;
+  margin: 0;
+}
+
+.mat-caption {
+  color: #bfbfbf;
+  font-weight: 500;
+}
+
+.mat-caption::before {
+  content: '';
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 7.5px;
+  background-color: #4caf50;
+  margin: 0 5px 0 20px;
+}
+
+.date-header {
+  color: #bfbfbf;
+  font-weight: 500;
+  border-bottom: #e2e2e2 2px solid;
+  margin-bottom: 0;
+  padding-bottom: 1em;
+}

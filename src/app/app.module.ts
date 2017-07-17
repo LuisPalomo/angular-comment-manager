@@ -4,10 +4,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule, MdIconModule, MdIconRegistry } from '@angular/material';
 
 import { AppComponent } from './app.component';
+import { ConversationComponent } from './components/conversation/conversation.component';
+import { CommentsComponent } from './components/comments/comments.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ConversationComponent,
+    CommentsComponent
   ],
   imports: [
     BrowserModule,
