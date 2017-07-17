@@ -2,7 +2,10 @@
   <md-list-item *ngFor="let comment of comments" class="list-item">
     <img md-list-avatar src="{{comment.user.avatar}}" alt="...">
     <h3 md-line class="mat-subheading-2"> {{comment.user.name}} <span class="comment-time">{{comment.time.substring(16, 21)}}</span></h3>
-    <p md-line class="mat-body-2"> {{comment.text}} </p>
+    <p md-line class="mat-body-2" *ngIf="!comment.editing" (click)="enableEdit(comment)"> {{comment.text}} </p>
+    <md-input-container floatPlaceholder="never" *ngIf="comment.editing">
+      <input mdInput placeholder="Edit comment..." [(ngModel)]="comment.text">
+    </md-input-container>
   </md-list-item>
 </md-list>
 

@@ -5,4 +5,5 @@ export class Comment {
   user: User;
   text: string;
   time: string;
+  editing?: boolean;
 }

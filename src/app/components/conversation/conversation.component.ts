@@ -50,19 +50,20 @@ export class ConversationComponent implements OnInit {
     this.newText = '';
   }
 
+  // TODO: This should be in a pipe
   private formatDate(date) {
-  const monthNames = [
-    'January', 'February', 'March',
-    'April', 'May', 'June', 'July',
-    'August', 'September', 'October',
-    'November', 'December'
-  ];
+    const monthNames = [
+      'January', 'February', 'March',
+      'April', 'May', 'June', 'July',
+      'August', 'September', 'October',
+      'November', 'December'
+    ];
 
-  const day = date.getDate();
-  const monthIndex = date.getMonth();
-  const year = date.getFullYear();
+    const day = date.getDate();
+    const monthIndex = date.getMonth();
+    const year = date.getFullYear();
 
-  return day + ' ' + monthNames[monthIndex] + ' ' + year;
-}
+    return day + ' ' + monthNames[monthIndex] + ' ' + year;
+  }
 
 }
