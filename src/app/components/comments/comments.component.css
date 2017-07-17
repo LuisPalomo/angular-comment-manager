@@ -4,6 +4,7 @@
 }
 
 .mat-body-2 {
+  color: #646464 !important;
   padding-bottom: 2em !important;
   border-bottom: #e2e2e2 2px solid;
   white-space: normal !important;

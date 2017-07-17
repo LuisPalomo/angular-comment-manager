@@ -1,13 +1,19 @@
 <md-card>
-    <md-card-header>
-      <h2 class="mat-title">{{userName}}</h2>
-      <span class="mat-caption">{{status}}</span>
-    </md-card-header>
-    <md-card-content>
-      <p class="date-header">{{date}}</p>
-      <app-comments [comments]="comments"></app-comments>
-    </md-card-content>
-    <md-card-actions>
-      <input
-    </md-card-actions>
-  </md-card>
+  <md-card-header>
+    <h2 class="mat-title">{{toUser.name}}</h2>
+    <span class="mat-caption">{{status}}</span>
+  </md-card-header>
+  <md-card-content>
+    <p class="date-header">{{date}}</p>
+    <app-comments [comments]="comments"></app-comments>
+  </md-card-content>
+  <md-card-actions>
+    <md-icon fontSet="fa" fontIcon="fa-reply-all"></md-icon>
+    <md-input-container floatPlaceholder="never" class="comment-input">
+      <input mdInput placeholder="Start typing your message or drop file..." [(ngModel)]="newText">
+    </md-input-container>
+    <span class="fill-remaining-space"></span>
+    <md-icon fontSet="fa" fontIcon="fa-paperclip" class="fa-flip-vertical"></md-icon>
+    <button md-raised-button color="primary" (click)="sendComment()">SEND</button>
+  </md-card-actions>
+</md-card>

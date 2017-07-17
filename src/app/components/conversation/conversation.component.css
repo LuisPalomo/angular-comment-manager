@@ -16,7 +16,16 @@ md-card-content {
 
 md-card-actions {
   background-color: #f7f7f7;
+  align-items: center;
+  padding: 1em 5em !important;
   margin: 0;
+  display: flex;
+}
+
+md-icon{
+  color: #bfbfbf;
+  font-size: 1.2em;
+  margin-right: 1em;
 }
 
 .mat-title {
@@ -32,8 +41,8 @@ md-card-actions {
 .mat-caption::before {
   content: '';
   display: inline-block;
-  width: 0.8em;
-  height: 0.8em;
+  width: 10px;
+  height: 10px;
   border-radius: 7.5px;
   background-color: #4caf50;
   margin: 0 5px 0 20px;
@@ -45,4 +54,12 @@ md-card-actions {
   border-bottom: #e2e2e2 2px solid;
   margin-bottom: 0;
   padding-bottom: 1em;
+}
+
+.comment-input {
+  width: 50%;
+}
+
+.fill-remaining-space {
+  flex: 1 1 auto;
 }

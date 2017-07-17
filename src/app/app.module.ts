@@ -6,6 +6,7 @@ import { MaterialModule, MdIconModule, MdIconRegistry } from '@angular/material'
 import { AppComponent } from './app.component';
 import { ConversationComponent } from './components/conversation/conversation.component';
 import { CommentsComponent } from './components/comments/comments.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CommentsComponent } from './components/comments/comments.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
   ],
   providers: [
     MdIconRegistry

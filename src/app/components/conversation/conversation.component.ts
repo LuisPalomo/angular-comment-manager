@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Comment } from '../../models/comment';
+import { User } from '../../models/user';
 import { comments } from '../../mocked-data';
 
 @Component({
@@ -10,6 +11,12 @@ import { comments } from '../../mocked-data';
 export class ConversationComponent implements OnInit {
 
   @Input()
+  toUser: User;
+
+  @Input()
+  fromUser: User;
+
+  @Input()
   userName: string;
 
   @Input()
@@ -17,27 +24,43 @@ export class ConversationComponent implements OnInit {
 
   date: string;
 
+  newText: string;
+
   private comments: Comment[];
+
+  private idCounter: number;
 
   constructor() {
     this.date = this.formatDate(new Date());
+    this.newText = '';
     this.comments = comments;
+    this.idCounter = 4;
   }
 
   ngOnInit() {
   }
 
+  sendComment(): void {
+    this.comments.push({
+      id: this.idCounter++ + '',
+      text: this.newText,
+      time: new Date().toString(),
+      user: this.fromUser
+    });
+    this.newText = '';
+  }
+
   private formatDate(date) {
-  var monthNames = [
-    "January", "February", "March",
-    "April", "May", "June", "July",
-    "August", "September", "October",
-    "November", "December"
+  const monthNames = [
+    'January', 'February', 'March',
+    'April', 'May', 'June', 'July',
+    'August', 'September', 'October',
+    'November', 'December'
   ];
 
-  var day = date.getDate();
-  var monthIndex = date.getMonth();
-  var year = date.getFullYear();
+  const day = date.getDate();
+  const monthIndex = date.getMonth();
+  const year = date.getFullYear();
 
   return day + ' ' + monthNames[monthIndex] + ' ' + year;
 }
